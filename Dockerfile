@@ -6,5 +6,7 @@ FROM sinacloud/docker-apache-php:latest
 COPY --from=0 /app/tp5 /tp5
 COPY ./docker-entrypoint.sh /
 
+RUN chmod +x /docker-entrypoint.sh
+
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["apache2-foreground"]
