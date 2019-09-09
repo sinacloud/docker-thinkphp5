@@ -1,5 +1,5 @@
 FROM composer:1.5
-RUN composer create-project topthink/think=5.1.27 tp5  --prefer-dist
+RUN composer create-project topthink/think=5.1.38 tp5  --prefer-dist
 
 FROM sinacloud/docker-apache-php:latest
 
